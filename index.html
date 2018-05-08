@@ -10,12 +10,14 @@
 <div class="main">
   <!-- "<p><span class="gauche">partie à gauche</span><span class="droite">partie à droite</span>partie au centre</p>"-->
   <div class="main-header">
-    <img src="./blackbeach.jpg" alt="logo classieux">
-  <h3>Menu:</h3>
+    <img src="./blackdiamond.jpg" alt="logo classieux">
+
+  <div class="menu-contact">
    <ul>
     <li><a href="#Présentation">Présentation</a></li>
     <li><a href="#Contact">Contact</a></li>
   </ul>
+</div>
   </div>
   <div class="main-container">
     <div id="Présentation">
@@ -39,10 +41,37 @@
     <li>Stoner</li>
     <li>VaporWave</li>
     <li>Wave</li>
+    <li>Post-rock</li>
   </ul>
+  <div class="contact">
+    <div id="Contact">
   <h4>Contact: </h4>
-<p><a href="mailto:jessefumba@gmail.com"> Cliquez ici pour me joindre</a> </p>
+  <div class="container">
+    <form id="myform" class="cssform" action="">
+
+	<p><label for="user">Nom :</label>
+	<input type="text" placeholder="Nom et prénom" id="user" value="" /></p>
+
+	<p><label for="emailaddress">Email :</label>
+	<input type="text" placeholder="votre adresse email"id="emailaddress" value="" /></p>
+
+	<p><label for="comments">Message :</label>
+	<textarea id="comments" placeholder="Les questions sont les bienvenues" rows="5" cols="25"></textarea></p>
+
+	<p><label for="comments">Sexe :</label>
+	Homme :<input type="radio" name="sex" />
+	Femme :<input type="radio" name="sex" />
+  Autre :<input type="radio" name="sex" /></p>
+
+
+	<p><div style="margin-left: 150px;">
+		<input type="submit" value="Envoyer" />
+		<input type="reset" value="Reset" />
+	</div></p>
+</form>
+
   </div>
+</div>
   </div>
   <div class="main-footer">
 
