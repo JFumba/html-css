@@ -30,6 +30,7 @@ border-radius: 5px;
 
 }
 .main-footer {
+
   height: 40px;
 border-radius: 5px;
 background-color: black;
@@ -41,7 +42,8 @@ h4 {
 }
 
 
-img {
+
+.main-header img {
   filter: invert(1);
   width: 140px;
 	height: 142px;
@@ -55,7 +57,6 @@ img {
   webkit-transition: -webkit-transform .8s ease-in-out;
          transition:         transform .8s ease-in-out;
 }
-
 ul li a {
 font-size: 35px;
 
@@ -73,9 +74,9 @@ p {
 #copyright {
   text-align: center;
 }
-img:hover {
-  webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+.main-header img:hover {
+  webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
   }
   /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -146,3 +147,15 @@ display: inline-block;
   margin-top: 12px;
   margin-bottom: 7px;
   }
+.main-container img {
+display: inline;
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  margin-left: 5px;
+
+}
+
+.main-container div {
+  position: relative;
+}
