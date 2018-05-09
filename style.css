@@ -29,14 +29,7 @@ border-radius: 5px;
 
 
 }
-.main-footer {
 
-  height: 40px;
-border-radius: 5px;
-background-color: black;
-color:white;
-
-}
 h4 {
   padding-top: 5px;
 }
@@ -71,9 +64,7 @@ div {
 p {
   padding: 5px;
 }
-#copyright {
-  text-align: center;
-}
+
 .main-header img:hover {
   webkit-transform: rotate(360deg);
           transform: rotate(360deg);
@@ -112,8 +103,10 @@ input[type=submit]:hover {
     padding: 20px;
 }
 body {
-  overflow: auto;
+  overflow-y : scroll;
   font-family: "Lucida Console", Courier, monospace;
+
+
 }
 .main-header * {
   color: #ABA8A9;
@@ -146,16 +139,61 @@ display: inline-block;
   left:20px;
   margin-top: 12px;
   margin-bottom: 7px;
-  }
-.main-container img {
-display: inline;
-  width: 180px;
-  height: 180px;
-  border-radius: 10px;
-  margin-left: 5px;
 
-}
+  }
+
 
 .main-container div {
   position: relative;
+}
+.main-footer {
+
+  height: 40px;
+border-radius: 5px;
+background-color: black;
+color:white;
+}
+
+.main-footer {
+  animation: inherit;
+}
+.main-footer{
+  color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 10s infinite;
+  background-color: currentColor;
+}
+@supports (background-blend-mode: overlay) {
+  .main-footer {
+    background-image: linear-gradient(45deg, white 10%, black 90%);
+    background-blend-mode: overlay;
+  }
+}
+@keyframes wheelHueColor {
+  from, to { color: hsl(324, 70%, 45%); }
+  10%      { color: hsl(360, 65%, 45%); }
+  20%      { color: hsl( 36, 80%, 45%); }
+  30%      { color: hsl( 72, 75%, 35%); }
+  40%      { color: hsl(108, 65%, 35%); }
+  50%      { color: hsl(144, 75%, 35%); }
+  60%      { color: hsl(180, 75%, 35%); }
+  70%      { color: hsl(216, 60%, 45%); }
+  80%      { color: hsl(252, 65%, 50%); }
+  90%      { color: hsl(288, 60%, 40%); }
+}
+
+
+/* misc */
+
+.main-footer {
+
+  display: flex;
+}
+
+#copyright {
+
+
+  padding: 1em;
+}
+.main-container {
+  margin: 5px;
 }
